@@ -1,4 +1,4 @@
-# Query con Select
+# Query con SELECT
 
 ### Selezionare tutti gli insegnanti
 ```sql
