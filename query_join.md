@@ -54,9 +54,9 @@
     ON teachers.id = course_teacher.teacher_id;
 ```
 
-### Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica
+### Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica(54)
 ```sql
-    SELECT departments.name as Nome_dipartimento, teachers.surname AS Cognome_docente, teachers.name AS Nome_docente
+    SELECT DISTINCT departments.name as Nome_dipartimento, teachers.surname AS Cognome_docente, teachers.name AS Nome_docente
     FROM `teachers`
     JOIN `course_teacher`
     ON teachers.id = course_teacher.teacher_id
